@@ -168,7 +168,7 @@ disclosure practices.
 
 ## Author
 
-**BlackTrace**
+**AAYAN SHAH**
 
 Cybersecurity learner focused on offensive security, penetration
 testing, and red team methodology.
