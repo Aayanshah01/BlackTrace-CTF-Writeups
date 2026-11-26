@@ -1,0 +1,3 @@
+# BlackTrace-CTF-Writeups
+# Current repository scripts use Python standard-library modules only.
+# No third-party Python packages are required at this stage.

@@ -1,0 +1,17 @@
+title: "Challenge Name"
+platform: "Platform Name"
+category: "web"
+difficulty: "unknown"
+date: "YYYY-MM-DD"
+status: "in-progress"
+
+skills: []
+tools: []
+tags: []
+
+writeup: "README.md"
+scripts: []
+evidence: []
+
+flag_policy: "follow-platform-rules"
+public_writeup: false

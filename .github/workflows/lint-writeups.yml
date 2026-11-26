@@ -1,0 +1,36 @@
+name: Lint Writeups
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check shell syntax
+        run: bash -n scripts/new-writeup.sh
+
+      - name: Check Python syntax
+        run: |
+          python -m py_compile \
+            scripts/validate-writeup.py \
+            scripts/generate-index.py \
+            scripts/check-links.py
+
+      - name: Check committed whitespace
+        run: git diff-tree --check --root --no-commit-id -r HEAD
