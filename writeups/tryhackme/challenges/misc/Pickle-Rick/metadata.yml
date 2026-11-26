@@ -1,0 +1,54 @@
+title: "Pickle Rick"
+platform: "tryhackme"
+category: "misc"
+difficulty: "easy"
+date: "2026-11-26"
+status: "completed"
+
+skills:
+  - "network-reconnaissance"
+  - "web-enumeration"
+  - "html-source-analysis"
+  - "linux-enumeration"
+  - "command-execution"
+  - "reverse-shell"
+  - "linux-privilege-escalation"
+  - "base64-analysis"
+
+tools:
+  - "Nmap"
+  - "Gobuster"
+  - "Browser Developer Tools"
+  - "Netcat"
+  - "Linux command-line utilities"
+
+tags:
+  - "tryhackme"
+  - "ctf"
+  - "web"
+  - "linux"
+  - "reconnaissance"
+  - "privilege-escalation"
+
+writeup: "README.md"
+scripts: []
+
+evidence:
+  - "evidence/01-nmap.png"
+  - "evidence/02-gobuster.png"
+  - "evidence/03-assets-directory.png"
+  - "evidence/04-source-code-username.png"
+  - "evidence/05-portal-source.png"
+  - "evidence/06-login-page.png"
+  - "evidence/07-command-panel.png"
+  - "evidence/08-web-file-enumeration.png"
+  - "evidence/09-first-ingredient-file.png"
+  - "evidence/10-clue-file.png"
+  - "evidence/11-reverse-shell.png"
+  - "evidence/12-first-ingredient-proof.png"
+  - "evidence/13-second-ingredient-proof.png"
+  - "evidence/14-root-ingredient-proof.png"
+  - "evidence/15-base64-investigation.png"
+
+flag_policy: "follow-platform-rules"
+public_writeup: false
